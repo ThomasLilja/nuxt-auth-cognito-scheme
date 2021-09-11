@@ -1,5 +1,9 @@
 # @thomaslilja/nuxt-auth-scheme-cognito
 
+This is a continuation of the work done in https://github.com/sirdiego/nuxt-auth-cognito-scheme.
+
+Compatible with @nuxtjs/auth v4.
+
 ## Setup
 
 Install with npm:
@@ -40,4 +44,10 @@ Edit `nuxt.config.js`:
     }
   }
 }
+```
+
+## Usage
+
+```js
+this.$auth.loginWith('cognito', { data: { username: this.email, password: this.password } });
 ```
