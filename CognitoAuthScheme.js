@@ -1,5 +1,5 @@
 import { AuthenticationDetails, CognitoUserPool, CognitoUser } from 'amazon-cognito-identity-js';
-import { UniversalStorageWrapper } from './UniversalStorageWrapper';
+import { UniversalStorageWrapper } from '@thomaslilja/nuxt-auth-scheme-cognito/UniversalStorageWrapper';
 
 if (!process.client || !('fetch' in window)) {
   require('cross-fetch/polyfill');
