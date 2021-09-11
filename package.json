@@ -1,10 +1,10 @@
 {
-  "name": "@thomaslilja/nuxt-auth-cognito-scheme",
+  "name": "@thomaslilja/nuxt-auth-scheme-cognito",
   "version": "1.1.0",
   "description": "Use amazon-cognito-identity-js with the Nuxt.js Auth Module.",
   "main": "index.js",
   "author": "Thomas Lilja <thomaslilja@live.se>",
-  "repository": "thomaslilja/nuxt-auth-cognito-scheme",
+  "repository": "thomaslilja/nuxt-auth-scheme-cognito",
   "license": "ISC",
   "dependencies": {
     "amazon-cognito-identity-js": "^5.1.0",
@@ -16,8 +16,5 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "prettier": "^2.4.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

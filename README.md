@@ -1,17 +1,17 @@
-# @thomaslilja/nuxt-auth-cognito-scheme
+# @thomaslilja/nuxt-auth-scheme-cognito
 
 ## Setup
 
 Install with npm:
 
 ```bash
-npm install --save @thomaslilja/nuxt-auth-cognito-scheme
+npm install --save @thomaslilja/nuxt-auth-scheme-cognito
 ```
 
 Install with yarn:
 
 ```bash
-yarn add @thomaslilja/nuxt-auth-cognito-scheme
+yarn add @thomaslilja/nuxt-auth-scheme-cognito
 ```
 
 Edit `nuxt.config.js`:
@@ -20,7 +20,7 @@ Edit `nuxt.config.js`:
 {
   modules: [
     '@nuxtjs/axios',
-    '@thomaslilja/nuxt-auth-cognito-scheme', // Insert before @nuxtjs/auth
+    '@thomaslilja/nuxt-auth-scheme-cognito', // Insert before @nuxtjs/auth
     '@nuxtjs/auth'
   ],
   auth: {
