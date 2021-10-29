@@ -12,8 +12,8 @@ const DEFAULTS = {
   idToken: false,
   tokenName: 'Authorization',
   autoFetchUser: true,
-  userPoolId: undefined,
-  clientId: undefined,
+  userPoolId: process.env.AWS_COGNITO_USER_POOL_ID,
+  clientId: process.env.AWS_COGNITO_CLIENT_ID,
   refreshInterval: 5 * 60 * 1000,
   fetchUserCallback: false,
 };
