@@ -12,8 +12,8 @@ const DEFAULTS = {
   idToken: false,
   tokenName: 'Authorization',
   autoFetchUser: true,
-  userPoolId: process.env.AWS_COGNITO_USER_POOL_ID,
-  clientId: process.env.AWS_COGNITO_CLIENT_ID,
+  userPoolId: undefined,
+  clientId: undefined,
   refreshInterval: 5 * 60 * 1000,
   fetchUserCallback: false,
 };
@@ -26,8 +26,8 @@ export default class CognitoAuthScheme {
 
     this.$storage = new UniversalStorageWrapper(this.$auth.$storage, this.options.clientId);
     this.$pool = new CognitoUserPool({
-      UserPoolId: this.options.userPoolId,
-      ClientId: this.options.clientId,
+      UserPoolId: this.options.userPoolId || this.$auth.ctx.app.$config.cognitoUserPoolId,
+      ClientId: this.options.clientId || this.$auth.ctx.app.$config.cognitoClientId,
       Storage: this.$storage,
     });
   }
